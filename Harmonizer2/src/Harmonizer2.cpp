@@ -8,10 +8,10 @@
 /**********************************************************************************************************************************************************/
 
 #define PLUGIN_URI "http://moddevices.com/plugins/mod-devel/Harmonizer2"
-#define FIDELITY0 4,2,1,1
-#define FIDELITY1 8,4,2,1
-#define FIDELITY2 12,6,3,2
-#define FIDELITYPD 8,4,2,1
+#define FIDELITY0 16,8,4,2
+#define FIDELITY1 20,10,5,3
+#define FIDELITY2 32,16,8,4
+#define FIDELITYPD 16,8,4,2
 enum {IN, OUT_CLEAN, OUT_1, OUT_2, TONE, SCALE, INTERVAL_1, INTERVAL_2, MODE, LOWNOTE, GAIN_CLEAN, GAIN_1, GAIN_2, FIDELITY, PLUGIN_PORT_COUNT};
 
 /**********************************************************************************************************************************************************/

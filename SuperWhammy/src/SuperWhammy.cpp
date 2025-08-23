@@ -6,10 +6,10 @@
 /**********************************************************************************************************************************************************/
 
 #define PLUGIN_URI "http://moddevices.com/plugins/mod-devel/SuperWhammy"
-#define FIDELITY0 6,3,2,1
-#define FIDELITY1 12,6,3,2
-#define FIDELITY2 16,8,4,2
-#define FIDELITY3 20,10,5,3
+#define FIDELITY0 16,8,4,2
+#define FIDELITY1 20,10,5,3
+#define FIDELITY2 28,14,7,4
+#define FIDELITY3 32,16,8,4
 #define SMOOTH_DURATION 0.1
 enum {IN, OUT, STEP, FIRST, LAST, CLEAN, GAIN, FIDELITY, PLUGIN_PORT_COUNT};
 

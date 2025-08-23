@@ -128,7 +128,7 @@ lv2:port
     lv2:symbol "Fidelity";
     lv2:name "Fidelity";
     lv2:shortName "Fidelity";
-    lv2:default 1;
+    lv2:default 3;
     lv2:minimum 0;
     lv2:maximum 3;
     lv2:portProperty lv2:integer, lv2:enumeration;
@@ -136,13 +136,5 @@ lv2:port
     lv2:scalePoint [rdfs:label "Medium"; rdf:value 1];
     lv2:scalePoint [rdfs:label "High"; rdf:value 2];
     lv2:scalePoint [rdfs:label "Hi-Fi"; rdf:value 3];
-];
-
-modgui:gui [
-    modgui:resourcesDirectory <modgui>;
-    modgui:stylesheet <modgui/css-super-whammy.css>;
-    modgui:iconTemplate <modgui/icon-super-whammy.html>;
-    modgui:templateData <modgui/data-super-whammy.json>;
-    modgui:screenshot <modgui/screenshot-super-whammy.png>;
-    modgui:thumbnail <modgui/thumb-super-whammy.png>;
 ].
+

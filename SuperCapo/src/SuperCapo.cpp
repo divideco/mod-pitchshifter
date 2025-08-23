@@ -6,9 +6,9 @@
 /**********************************************************************************************************************************************************/
 
 #define PLUGIN_URI "http://moddevices.com/plugins/mod-devel/SuperCapo"
-#define FIDELITY0 8,4,2,1
-#define FIDELITY1 16,8,4,2
-#define FIDELITY2 24,12,6,3
+#define FIDELITY0 20,10,5,3
+#define FIDELITY1 28,14,7,4
+#define FIDELITY2 32,16,8,4
 enum {IN, OUT, STEP, GAIN, FIDELITY, PLUGIN_PORT_COUNT};
 
 /**********************************************************************************************************************************************************/
