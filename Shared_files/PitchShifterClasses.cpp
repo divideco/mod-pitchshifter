@@ -8,7 +8,7 @@
 #include <lv2/lv2plug.in/ns/ext/buf-size/buf-size.h>
 #include <lv2/lv2plug.in/ns/ext/options/options.h>
 
-#define N_SAMPLES_DEFAULT 128
+#define N_SAMPLES_DEFAULT 64
 
 PSAnalysis::PSAnalysis(uint32_t n_samples, int nBuffers, const char* wisdomFile) //Construtor
 {
@@ -275,10 +275,12 @@ void PSSinthesis::Sinthesis(double s)
 	
 }
 
-int nBuffersSW(uint32_t n_samples, int c64, int c128, int c256, int c_default)
+int nBuffersSW(uint32_t n_samples, int c32, int c64, int c128, int c256, int c_default)
 {
 	switch(n_samples)
 	{
+		case 32:
+			return c32;
 		case 64:
 			return c64;
 		case 128:
