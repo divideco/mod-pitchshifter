@@ -7,8 +7,8 @@
 
 #define PLUGIN_URI "http://moddevices.com/plugins/mod-devel/Drop"
 #define FIDELITY0 20,10,5,3
-#define FIDELITY1 28,14,7,4
-#define FIDELITY2 32,16,8,4
+#define FIDELITY1 32,16,8,4
+#define FIDELITY2 48,24,12,6
 enum {IN, OUT, STEP, GAIN, FIDELITY, PLUGIN_PORT_COUNT};
 
 /**********************************************************************************************************************************************************/
@@ -114,7 +114,7 @@ const LV2_Descriptor* lv2_descriptor(uint32_t index)
 LV2_Handle Drop::instantiate(const LV2_Descriptor* descriptor, double samplerate, const char* bundle_path, const LV2_Feature* const* features)
 {
     std::string wisdomFile = bundle_path;
-    wisdomFile += "/harmonizer.wisdom";
+    wisdomFile += "harmonizer.wisdom";
     const uint32_t n_samples = GetBufferSize(features);
     Drop *plugin = new Drop(n_samples, nBuffersSW(n_samples,FIDELITY1), samplerate, wisdomFile);
     return (LV2_Handle)plugin;
